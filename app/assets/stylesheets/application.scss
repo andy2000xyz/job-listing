@@ -14,6 +14,33 @@
  *= require_self
  *= require font-awesome
  */
+ .jumbotron {
+   background-image:url('https://static.pexels.com/photos/24068/pexels-photo.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 110px;
+ }
+
+ .title {
+   font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+   text-align: center;
+   margin-top: 200px;
+   margin-bottom: 80px;
+ }
+
+ .slogan {
+   margin-top: 10px;
+   margin-bottom: 50px;
+   text-align: center;
+   color: white;
+   top: 12px;
+ }
+
+ .lead {
+   margin-bottom: 60px;
+   text-align: center;
+   color: white;
+ }
 
  .custab{
    border: 1px solid #ccc;
@@ -26,6 +53,18 @@
  .custab:hover{
    box-shadow: 3px 3px 0px transparent;
    transition: 0.5s;
+ }
+
+ .caption {
+   margin: 30px;
+   text-align: center;
+   top: 20px;
+ }
+
+ .thumbnail {
+     border: 0 none;
+     box-shadow: none;
+     margin-top: 60px;
  }
  
  @import "bootstrap-sprockets";
