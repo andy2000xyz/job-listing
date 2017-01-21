@@ -8,7 +8,6 @@ Rails.application.routes.draw do
         post :hide
       end
       resources :resumes
-
     end
   end
 
@@ -18,6 +17,10 @@ Rails.application.routes.draw do
 
     resources :jobs do
       resources :resumes
+
+      collection do
+        get :search
+      end
     end
 
     root 'welcome#index'

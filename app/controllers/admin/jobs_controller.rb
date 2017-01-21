@@ -5,10 +5,11 @@ class Admin::JobsController < ApplicationController
 
   def show
     @job = Job.find(params[:id])
+    @resumes = @job.resumes
   end
 
   def index
-    @jobs = Job.all
+    @jobs = Job.all.recent.paginate(:page => params[:page], :per_page => 10)
   end
 
   def new
@@ -67,7 +68,7 @@ class Admin::JobsController < ApplicationController
     redirect_to :back
   end
 
-  
+
   private
 
   def job_params

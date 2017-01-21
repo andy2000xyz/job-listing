@@ -30,6 +30,8 @@
       <td>
         刊登时间
       </td>
+      <td>
+      </td>
     </tr>
   </thead>
 
@@ -56,7 +58,7 @@
         <% end %>
     </td>
     <td>
-      <%= job.created_at %>
+      <%= local_time(job.created_at, '%B %e, %Y %l:%M%p') %>
     </td>
 
     <td> <%= link_to(job.resumes.count, admin_job_resumes_path(job)) %> </td>
@@ -64,3 +66,8 @@
   </tr>
   <% end %>
 </table>
+
+<!-- add paginate function -->
+<div class="text-center">
+<%= will_paginate @jobs, renderer: BootstrapPagination::Rails %>
+</div>

@@ -1,6 +1,6 @@
   <div class="jumbotron">
     <h2 class="title" style="font-size:50px; margin-top:400px;">杜拉拉升值记</h2>
-    <p class="slogan">杜拉拉升职记 是一个提供高端工作机会的求职网站。
+    <p class="slogan">杜拉拉升职记 是一个专门为女性量身订制高端工作机会的求职网站。
     <br>
     我们希望藉由这个网站，能让大家找到且应征上高薪且优质的工作。
     <br>
@@ -11,23 +11,8 @@
 
   <div class="container-fluid">
 
-    <div class="row">
-      <div class="col-sm-9 col-lg-8 col-lg-offset-2">
-        <form accept-charset="UTF-8" action="/jobs/search" class="jobs-search-form" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-          <div class="input-group">
-            <input type="text" class="form-control" name="q" value="" placeholder="输入职位关键词：如 销售总监等">
+    <%= render :partial => "jobs/search_bar" %>
 
-            <span class="input-group-btn">
-              <button type="submit" class="btn btn-default">
-                <span class="glyphicon glyphicon-search"></span>
-              </button>
-            </span>
-          </div>
-    </form>  </div>
-
-      <div class="col-sm-3 col-lg-2">
-        <a class="btn btn-primary btn-block " data-remote="true" href="/jobs/inform" id="post-new-job-link">张贴一份 招聘公告</a>
-      </div>
     </div>
 
     <br>
@@ -206,7 +191,7 @@
       <div class="row">
 
       	<div class="col-lg-3">
-      				<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+      				<div class="cuadro_intro_hover " style="background-color:#f0d5dd;">
   						<p style="text-align:center;">
   							<img src="http://i9.qiuzhi5.com/?url=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz%2F1Eo86IE01wm2J78H1TibbHgjvibJUjULQSNyeYuBpQGTZ3XIzgpAH8IibUpR8IEm6J6w7FMAUwu1cPtQBsKEjd0Uw%2F0%3Fwx_fmt%3Dgif" class="img-responsive" alt="">
   						</p>
@@ -223,7 +208,7 @@
   	    </div>
 
           <div class="col-lg-3">
-          			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+          			<div class="cuadro_intro_hover " style="background-color:#f0d5dd;">
   						<p style="text-align:center;">
   							<img src="http://i9.qiuzhi5.com/?url=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz%2F1Eo86IE01wm2J78H1TibbHgjvibJUjULQSKCFAhRoIKuLya0ksVo3j1jk0BInluTYwO7pVK2z3jMJczqXzsOgPKw%2F0%3Fwx_fmt%3Dgif" class="img-responsive" alt="">
   						</p>
@@ -239,7 +224,7 @@
 
   	    </div>
           <div class="col-lg-3">
-          			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+          			<div class="cuadro_intro_hover " style="background-color:#f0d5dd;">
   						<p style="text-align:center;">
   							<img src="http://i6.qiuzhi5.com/?url=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz%2F1Eo86IE01wm2J78H1TibbHgjvibJUjULQSfjmeqHxUb9OMcnibUlBBmQ5MafbExSXqQtXShsxrvdl4WAKHibhibjcgw%2F0%3Fwx_fmt%3Dgif" class="img-responsive" alt="">
   						</p>
@@ -255,7 +240,7 @@
 
   	    </div>
           <div class="col-lg-3">
-          			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+          			<div class="cuadro_intro_hover " style="background-color:#f0d5dd;">
   						<p style="text-align:center;">
   							<img src="http://i9.qiuzhi5.com/?url=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz%2F1Eo86IE01wm2J78H1TibbHgjvibJUjULQS3c2bvcul2IVTXWhCjVaMenkEnO35nhWS2trqkmXJcGH4fmBD3bmPIw%2F0%3Fwx_fmt%3Dgif" class="img-responsive" alt="">
   						</p>
@@ -283,7 +268,7 @@
       <div class="row">
         <div class="col-sm-4 ">
           <div class="thumbnail">
-            <img src="http://y.photo.qq.com/img?s=VfqbvmFVI&l=y.jpg" alt="search" class = "img-thhumbnail">
+            <img src="https://ww2.sinaimg.cn/large/006tKfTcjw1fbwarn6wyxj30ao0ao3ye.jpg" alt="search" class = "img-thhumbnail">
             <div class="caption">
               <h3>上海外滩3号</h3>
             </div>
@@ -291,7 +276,7 @@
         </div>
         <div class="col-sm-4 ">
           <div class="thumbnail">
-            <img src="http://y.photo.qq.com/img?s=9yBkCQVj7&l=y.jpg" alt="bid" class = "img-thhumbnail">
+            <img src="https://ww4.sinaimg.cn/large/006tKfTcgy1fbwaulrgcvj30ao0ao3ya.jpg" alt="bid" class = "img-thhumbnail">
             <div class="caption">
               <h3>info@No1offer.com</h3>
             </div>
@@ -299,9 +284,9 @@
         </div>
         <div class="col-sm-4 ">
           <div class="thumbnail">
-            <img src="http://y.photo.qq.com/img?s=bAQJ8dfF4&l=y.jpg" alt="heart" class = "img-thhumbnail">
+            <img src="https://ww3.sinaimg.cn/large/006tKfTcgy1fbwavzh9a1j30ao0aowea.jpg" alt="heart" class = "img-thhumbnail">
             <div class="caption">
-              <h3>021-12344321</h3>
+              <h3>021-68888888</h3>
             </div>
           </div>
         </div>
